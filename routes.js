@@ -8,7 +8,7 @@ route.get('/', homeController.index);
 
 // Rotas login
 route.get('/login/index', loginController.index);
+route.get('/register', registerController.index)
 
-//Rotas de cadastro
-route.get('/register/index', registerController.index)
+
 module.exports = route;

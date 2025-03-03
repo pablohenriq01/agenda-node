@@ -11,7 +11,8 @@
         <div class="">
           <div class="text-center">
             <h4 class="text-center">Faça seu login</h4>
-            <form action="/login" method="get">
+            <form action="/login/login" method="post">
+              
               <div class="mb-3">
                 <h5 for="exampleFormControlInput1" class="form-label">Email</h5>
                 <input type="email" class="form-control" name="email" placeholder="nome@exemplo.com">
@@ -29,7 +30,8 @@
                 <div class="col-auto">
                   <a href="/register" class="btn btn-secondary">Criar Conta</a>
                 </div>
-              </div> 
+              </div>
+              <input type="hidden" name="_csrf" value=<%= csrfToken %>
             </form>
             
         </div>
